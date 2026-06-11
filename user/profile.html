@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOO-K-ATALOG</title>
+    <link href="../bootstrap.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header class="header">         
+        <div class="container container-header">
+            <div class="header_logo">
+                <a href="../catalog/catalog.html" class="header_logo_link"> 
+                    <img src="../image/logo.png" alt="Інтернет-магазин книг - BOO-K-ATALOG" class="header_logo_img" data-language="logo_alt">BOO-K-ATALOG
+                </a>
+            </div>
+            
+            <div class="menu"> 
+                <!-- Контейнер для кнопки та мега-меню -->
+                <div class="catalog-wrapper has-megamenu">
+                    <a href="../catalog/catalog.html" class="menu-link">
+                        Каталог книг
+                        <span class="menu_eventer_arrow fn_menu_drop" data-level="1">
+                            <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M10.6389 0.600098L6.03886 5.2001L1.43886 0.600098L0.0388641 2.0001L6.03886 8.0001L12.0389 2.0001L10.6389 0.600098Z"></path>
+                            </svg>
+                        </span>
+                    </a>
+                    
+                    <!-- Випадаюче мега-меню на всю ширину екрану -->
+                    <div class="mega-menu">
+                        <div class="mega-menu-container">
+                            <div class="mega-col">
+                                <a href="#" class="highlight">1+1=3</a>
+                                <a href="#">Хіти продажів</a>
+                                <a href="#">Новинки</a>
+                                <a href="#">Передпродаж</a>
+                            </div>
+                            <div class="mega-col">
+                                <h3>Художні книги</h3>
+                                <a href="#">Українська література</a>
+                                <a href="#">Романи про кохання</a>
+                            </div>
+                            <div class="mega-col">
+                                <h3>Нон-фікшн</h3>
+                                <a href="#">Світова історія</a>
+                                <a href="#">Історія України</a>
+                            </div>
+                            <div class="mega-col">
+                                <h3>Дитяча література</h3>
+                                <a href="#">Книжки для найменших</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+                <a href="" class="pro_nas">Про нас</a>
+                <a href="" class="info">Інформація</a>
+            </div>
+            
+            <div class="header_button">
+                <div class="search-container">
+                    <label for="exampleDataList" class="form-label"></label>
+                    <input class="form-control control" list="datalistOptions" id="exampleDataList" placeholder="Пошук">
+                    
+                    <button class="search-container_button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" d="M21.7352 20.8599L16.2535 15.3782C17.4622 13.9681 18.1634 12.1434 18.1634 10.1406C18.1634 5.6894 14.5555 2.08273 10.1055 2.08273C5.65549 2.08273 2.08252 5.69056 2.08252 10.1406C2.08252 14.5906 5.68997 18.1984 10.1055 18.1984C12.1076 18.1984 13.9349 17.4639 15.3431 16.2556L20.8248 21.7373C20.9797 21.8555 21.1386 21.9174 21.2974 21.9174C21.4562 21.9174 21.6146 21.8569 21.7355 21.7358C21.9792 21.4952 21.9792 21.1 21.7352 20.8599ZM10.1404 16.9588C6.34776 16.9588 3.3222 13.8983 3.3222 10.1406C3.3222 6.38284 6.34776 3.3224 10.1404 3.3224C13.933 3.3224 16.9586 6.34797 16.9586 10.1406C16.9586 13.9332 13.8981 16.9588 10.1404 16.9588Z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <a href="#" class="wishlist_button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" d="M11.965 5.80195L12.4299 5.33785C13.7277 4.073 15.5252 3.49733 17.2917 3.79136C19.9609 4.2361 21.9172 6.54575 21.9172 9.25366V9.47835C21.9172 11.086 21.2509 12.624 20.0732 13.7203L13.073 20.2557C12.7824 20.5269 12.3989 20.678 11.9999 20.678C11.6009 20.678 11.2173 20.5269 10.9268 20.2557L3.92614 13.7203C2.75 12.624 2.08252 11.086 2.08252 9.47835V9.25366C2.08252 6.54575 4.03965 4.2361 6.70804 3.79136C8.4397 3.49733 10.2721 4.073 11.535 5.33785L11.965 5.80195ZM11.965 7.55686L10.6595 6.21259C9.67937 5.23287 8.28087 4.78581 6.91336 5.01399C4.84117 5.35955 3.28732 7.15397 3.28732 9.25366V9.47835C3.28732 10.7451 3.84711 11.9499 4.77183 12.8138L11.7713 19.3492C11.8333 19.4073 11.9146 19.4383 11.965 19.4383C12.0851 19.4383 12.1665 19.4073 12.2284 19.3492L19.2287 12.8138C20.1507 11.9499 20.6776 10.7451 20.6776 9.47835V9.25366C20.6776 7.15397 19.159 5.35955 17.0864 5.01399C15.684 4.78581 14.3204 5.23287 13.3403 6.21259L11.965 7.55686Z"></path>
+                    </svg>
+                    <span>Обране</span>
+                </a>
+                <a href="../user/login.html" class="login_button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" d="M12.0002 12.0001C12.9809 12.0001 13.9396 11.7093 14.7551 11.1644C15.5705 10.6195 16.2061 9.8451 16.5814 8.93902C16.9567 8.03294 17.0549 7.03591 16.8636 6.07402C16.6722 5.11213 16.2 4.22858 15.5065 3.5351C14.813 2.84162 13.9295 2.36935 12.9676 2.17801C12.0057 1.98668 11.0087 2.08488 10.1026 2.46019C9.1965 2.8355 8.42206 3.47107 7.87719 4.28652C7.33233 5.10197 7.0415 6.06068 7.0415 7.04141C7.0415 8.35654 7.56393 9.6178 8.49387 10.5477C9.4238 11.4777 10.6851 12.0001 12.0002 12.0001ZM12.0002 3.3224C12.7357 3.3224 13.4548 3.54052 14.0664 3.94917C14.6779 4.35782 15.1546 4.93865 15.4361 5.61821C15.7176 6.29777 15.7912 7.04554 15.6477 7.76696C15.5042 8.48837 15.15 9.15104 14.6299 9.67115C14.1098 10.1913 13.4471 10.5455 12.7257 10.689C12.0043 10.8325 11.2565 10.7588 10.577 10.4773C9.89742 10.1958 9.31659 9.71917 8.90794 9.10758C8.49929 8.496 8.28117 7.77696 8.28117 7.04141C8.2822 6.05539 8.67435 5.11004 9.37158 4.41281C10.0688 3.71558 11.0142 3.32343 12.0002 3.3224Z"></path>
+                        <path fill="currentColor" d="M20.6776 20.5726C20.6775 18.7921 19.9701 17.0845 18.7111 15.8255C17.4521 14.5665 15.7446 13.8592 13.9641 13.859H10.0359C8.25536 13.8592 6.54785 14.5666 5.28886 15.8256C4.02986 17.0846 3.32247 18.7921 3.32227 20.5726L3.32227 21.297C3.32227 21.4614 3.38757 21.6191 3.50381 21.7353C3.62005 21.8516 3.77771 21.9169 3.9421 21.9169C4.10649 21.9169 4.26415 21.8516 4.38039 21.7353C4.49663 21.6191 4.56194 21.4614 4.56194 21.297V20.5656C4.56581 17.5509 7.02039 15.0987 10.0359 15.0987H13.9602C16.9795 15.0987 19.4341 17.5509 19.438 20.5656V21.3068C19.438 21.4686 19.5022 21.6238 19.6166 21.7382C19.731 21.8526 19.8862 21.9169 20.048 21.9169H20.0676C20.1477 21.9169 20.227 21.9011 20.3011 21.8704C20.3751 21.8398 20.4423 21.7948 20.499 21.7382C20.5556 21.6815 20.6005 21.6143 20.6312 21.5403C20.6619 21.4663 20.6776 21.3869 20.6776 21.3068V20.5726Z"></path>
+                    </svg>
+                    <span>Вхід</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <!-- Каталог и корзина с фиксированным расположением на странице -->
+            <div class="row catalog-btn">
+                <!-- Каталог -->
+                
+                <!-- Значек корзины, вызывает модальное окно -->
+                <a href="../cart/cart.html">
+                        <button type="button" class="btn corzina" id="modalButton" aria-expanded="false">
+                            <img class="mx-1" src="../deps/icons/basket2-fill.svg" alt="Catalog Icon" width="24"
+                            height="24">
+                            <span>0</span>
+                        </button>
+                    </a>
+                <!-- Разметка модального окна корзины -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="text-center mb-4">Корзина</h3>
+                                <div class="container" id="cart-items-container">
+                                    <!-- Разметка корзины -->
+                                    <div class="card mb-3 text-bg-light shadow-lg">
+                                        <div class="card-header">
+                                            <h5 class="card-title">Товар</h5>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <div class="row text-center">
+                                                    <div class="col p-0">
+                                                        <div class="input-group">
+                                                            <span class="input-group-btn">
+                                                                <button type="button" class="btn btn-dark btn-sm decrement"
+                                                                    data-cart-id="" data-cart-change-url="">-</button>
+                                                            </span>
+                                                            <input type="text" class="form-control number" value="1"
+                                                                readonly>
+                                                            <span class="input-group-btn">
+                                                                <button type="button" class="btn btn-dark btn-sm increment"
+                                                                    data-cart-id="" data-cart-change-url="">+</button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col p-0">
+                                                        <p>x 100.00 = </p>
+                                                    </div>
+                                                    <div class="col p-0"><strong>100.00 $</strong></div>
+                                                    <div class="col p-0">
+                                                        <a href="#" class="remove-from-cart" data-cart-id="">
+                                                            <img class="mx-1" src="../deps/icons/trash3-fill.svg"
+                                                                alt="Catalog Icon" width="16" height="16">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card mb-3 shadow-lg">
+                                        <div class="card-footer">
+                                            <p class="float-left">Итого <strong>1</strong> товар(а) на сумму</p>
+                                            <h4 class="float-left"><strong>100.00 $</strong></h4>
+                                        </div>
+                                    </div>
+                                    <!-- Закончилась разметка корзины -->
+                                </div>
+                                <a class="btn btn-dark" href="../create_order/create_order.html">
+                                    Оформить заказ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Закончилась разметка модального окна -->
+            </div>
+        </div>
+        <!-- Контент -->
+        <div class="container">
+            <div class="row mt-1">
+                <div class="col-lg-2">
+                    <!-- Пустой блок на усмотрение -->
+                </div>
+                <div class="col-lg-10">
+                    <!-- Контент на странице -->
+                    <div class="row">
+                        <div class="container mt-5">
+                            <div class="row">
+                                <!-- Профиль с данными пользователя -->
+                                <div class="col-md-5">
+                                    <div class=" bg-white p-4 mb-4 mx-2 rounded shadow-lg">
+                                        <h3 class="text-center mb-4">Профиль пользователя</h3>
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-12 mb-3 text-center">
+                                                    <img src="../deps/images/baseavatar.jpg"
+                                                        alt="Аватар пользователя" class="img-fluid rounded-circle"
+                                                        style="max-width: 150px;">
+                                                    <input type="file" class="form-control mt-3" id="avatar"
+                                                        accept="image/*">
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <label for="firstName" class="form-label">Имя*</label>
+                                                    <input type="text" class="form-control" id="firstName"
+                                                        placeholder="Введите ваше имя" value="" required>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <label for="lastName" class="form-label">Фамилия*</label>
+                                                    <input type="text" class="form-control" id="lastName"
+                                                        placeholder="Введите вашу фамилию" value="" required>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <label for="username" class="form-label">Имя пользователя*</label>
+                                                    <input type="text" class="form-control" id="username"
+                                                        placeholder="Введите ваше имя пользователя" value="" required>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <label for="email" class="form-label">Email*</label>
+                                                    <input type="email" class="form-control" id="email"
+                                                        placeholder="Введите ваш email *youremail@example.com" value=""
+                                                        required>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-dark">Сохранить</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- Корзина -->
+                                <div class="col-md-7">
+                                    <div class=" bg-white p-4 mb-4 mx-2 rounded shadow-lg">
+                                        <h3 class="text-center mb-4">Корзина</h3>
+                                        <div class="container" id="cart-items-container">
+                                            <!-- Разметка корзины -->
+                                            <div class="card mb-3 text-bg-light shadow-lg">
+                                                <div class="card-header">
+                                                    <h5 class="card-title">Товар</h5>
+                                                </div>
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">
+                                                        <div class="row text-center">
+                                                            <div class="col p-0">
+                                                                <div class="input-group">
+                                                                    <span class="input-group-btn">
+                                                                        <button type="button" class="btn btn-dark btn-sm decrement"
+                                                                            data-cart-id="" data-cart-change-url="">-</button>
+                                                                    </span>
+                                                                    <input type="text" class="form-control number" value="1"
+                                                                        readonly>
+                                                                    <span class="input-group-btn">
+                                                                        <button type="button" class="btn btn-dark btn-sm increment"
+                                                                            data-cart-id="" data-cart-change-url="">+</button>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col p-0">
+                                                                <p>x 100.00 = </p>
+                                                            </div>
+                                                            <div class="col p-0"><strong>100.00 $</strong></div>
+                                                            <div class="col p-0">
+                                                                <a href="#" class="remove-from-cart" data-cart-id="">
+                                                                    <img class="mx-1" src="../deps/icons/trash3-fill.svg"
+                                                                        alt="Catalog Icon" width="16" height="16">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="card mb-3 shadow-lg">
+                                                <div class="card-footer">
+                                                    <p class="float-left">Итого <strong>1</strong> товар(а) на сумму</p>
+                                                    <h4 class="float-left"><strong>100.00 $</strong></h4>
+                                                </div>
+                                            </div>
+                                            <!-- Закончилась разметка корзины -->
+                                        </div>
+                                        <a class="btn btn-dark" href="../orders/create_order.html">
+                                            Оформить заказ
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Оформленные заказы -->
+                                <div class="col-md-12">
+                                    <div class=" bg-white p-4 mb-4 mx-2 rounded custom-shadow">
+                                        <h3 class="text-center mb-4">Мои заказы</h3>
+                                        <!-- Разметка заказов -->
+                                        <div class="container">
+                                            <div class="accordion" id="accordionExample">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="heading1">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                                            Заказ № 256 - 09 сентября 2023 9:04 | Статус:<strong class="mx-2"> В обработке</strong>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <table class="table table-dark table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Товар</th>
+                                                                        <th>Количество</th>
+                                                                        <th>Цена</th>
+                                                                        <th>Общая стоимость</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><a class="text-white" href="#">Комплект стол и три стула</a></td>
+                                                                        <td>1</td>
+                                                                        <td>255.00 $</td>
+                                                                        <td>255.00 $</td>
+                                                                        
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <div class="d-flex justify-content-between">
+                                                                <p><strong>Итого:</strong></p>
+                                                                <p><strong>255.00 $</strong></p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="heading2">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                                            Заказ № 248 - 01 августа 2023 11:28 | Статус: <strong>Получен</strong>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <table class="table table-dark table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Товар</th>
+                                                                        <th>Количество</th>
+                                                                        <th>Цена</th>
+                                                                        <th>Общая стоимость</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><a class="text-white" href="#">Стул офисный</a></td>
+                                                                        <td>2</td>
+                                                                        <td>30.00 $</td>
+                                                                        <td>60.00 $</td>
+                                                                        
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Закончилась разметка заказов -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../deps/js/jquery/jquery-3.7.0.min.js"></script>
+    <script src="../deps/js/jquery-events.js"></script>
+    <script src="../deps/js/jquery-ajax.js"></script>
+    <script src="../deps/js/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
