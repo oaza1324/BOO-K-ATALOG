@@ -33,16 +33,21 @@ body {
     top:0;
     z-index: 1000;
 }
-.btn.corzina{
+.container.corzina {
+    display: sticky;
+    top: 10px;
+}
+.btn.corzina_btn{
     color:white;
     background-color: rgb(29, 28, 28);
-    top: 150px;;
+    top: 400px;;
     z-index: 100;
     background-color: rgb(40, 39, 39);
 }
 .row.catalog-btn{
     position: fixed;
-    right: 0;
+    top: 92px;
+    right:4px;
     z-index: 999;
 }
 a {
@@ -106,7 +111,9 @@ a {
     transition: 0.3s ease;
 }
 .container.dropdown {
-    max-width: 1240px;
+    position: sticky;
+    top: 88px;
+    max-width: 1192px;
     width: 100%;
     height: 60px;
     background-color: #eeeeee;
@@ -116,6 +123,7 @@ a {
     border-radius: 10px;
     justify-content: space-between;
     overflow: visible;
+    z-index: 999;
 }
 .reset_filter button {
     font-family: Arial, Helvetica, sans-serif;
@@ -156,6 +164,16 @@ a {
     z-index: 999999 !important; 
     background-color: #eeeeee;
 }
+.dropdown-menu.profile {
+    background-color: rgb(28, 28, 28);
+
+}
+.dropdown-item.profile:hover{
+    background-color: rgb(49, 48, 48)
+}
+.dropdown-item.profile {
+    color: white;
+}
 .dropdown-menu {
     position:absolute;
     display: none;
@@ -184,22 +202,7 @@ a {
     position: relative;
     display: inline-block;
 }
-.mega-menu {
-    display: none;             
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-49%);
-    width: 101vw;              
-    box-sizing: border-box;
-    background-color: #141414; 
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #333;
-    padding: 30px 0;
-    z-index: 99999;              
-    padding-top: 20px;
-    margin-top: 0px;
-}
+
 .dropdown-toggle::after {
   content: none;
 }
@@ -242,13 +245,16 @@ li{
     display: inline-block;
 }
 .dropdown-menu-profile {
+    position:absolute;
     display: none;
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    z-index: 1;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    height: auto;
+    min-width: 200px;
+    max-height: 240px;
+    overflow-y: auto;
+    flex-direction: row;
 }
 .product-price{
     padding-left: 0px;
@@ -364,6 +370,7 @@ li{
     display: flex;
     padding-left: 10px;
     border-radius: 5px;
+    padding: 3px;
     position: relative;
     margin-left: -10px;
     box-shadow: none;
@@ -421,13 +428,29 @@ li{
 .has-megamenu:hover .mega-menu,
 .mega-menu:hover {
     display: block;
+    transition: 1s ease;
+}
+.mega-menu {
+    padding-top: 30px ;
+    display: none;             
+    position: absolute;
+    top: 100%;
+    left:200%;
+    transform: translateX(-49%);
+    width: 101vw;              
+    box-sizing: border-box;
+    background-color: none; 
+    z-index: 99999;              
+    margin-top: 0px;
+    transition: 1s ease;
 }
 .mega-menu-container {
-    width: 100%;
-    max-width: 1240px;
+    margin-left: 0;
+    max-width: 100%;
     height:auto;
-    margin: 0 auto;
-    padding: 50px;
+    padding: 40px;
+    padding-top: 20px;
+    background-color: rgb(44, 44, 44) ;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 колонки */

@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header">         
-        <div class="container container-header">
+        <div class="container container-header container-md">
             <div class="header_logo">
                 <a href="../index.html" class="header_logo_link"> 
                     <img src="../image/logo.png" alt="Інтернет-магазин книг - BOO-K-ATALOG" class="header_logo_img" data-language="logo_alt">BOO-K-ATALOG
@@ -57,6 +57,22 @@
                 
                 <a href="" class="pro_nas">Про нас</a>
                 <a href="" class="info">Інформація</a>
+                <div class="dropdown">
+                    <li>
+                        <button class="btn-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">Мій профіль</button>
+                        <ul class="dropdown-menu profile">
+                            <li><a class="dropdown-item profile" href="../cart/cart.html">Корзина</a></li>
+                            <li><a class="dropdown-item profile" href="../user/profile.html">Личный кабинет</a>
+                            </li>
+                            <li><a class="dropdown-item profile" href="#">Админ панель</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item profile" href="#">Выйти</a></li>
+                        </ul>
+                            
+                    </li>
+                </div>
             </div>
             
             <div class="header_button">
@@ -86,7 +102,7 @@
             </div>
         </div>
     </header>
-
+    
     <div class="container dropdown">
         <div class="d-flex gap-2 mt-1">
             <div class="dropdown">
@@ -190,7 +206,87 @@
         </div>
         <button type="submit" class="btn primenit">Примінити</button>
     </div>
-
+    <div class="container corzina">
+            <!-- Каталог и корзина с фиксированным расположением на странице -->
+            <div class="row catalog-btn">
+                <!-- Каталог -->
+            
+                <!-- Значек корзины, вызывает модальное окно -->
+                        <a href="../cart/cart.html">
+                            <button type="button" class="btn corzina_btn" id="modalButton" aria-expanded="false">
+                                <img class="mx-1" src="../deps/icons/basket2-fill.svg" alt="Catalog Icon" width="24"
+                                height="24">
+                                <span>0</span>
+                            </button>
+                        </a>
+                    
+                
+                <!-- Разметка модального окна корзины -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="text-center mb-4">Корзина</h3>
+                                <div class="container" id="cart-items-container">
+                                    <!-- Разметка корзины -->
+                                    <div class="card mb-3 text-bg-light shadow-lg">
+                                        <div class="card-header">
+                                            <h5 class="card-title">Товар</h5>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <div class="row text-center">
+                                                    <div class="col p-0">
+                                                        <div class="input-group">
+                                                            <span class="input-group-btn">
+                                                                <button type="button" class="btn btn-dark btn-sm decrement"
+                                                                    data-cart-id="" data-cart-change-url="">-</button>
+                                                            </span>
+                                                            <input type="text" class="form-control number" value="1"
+                                                                readonly>
+                                                            <span class="input-group-btn">
+                                                                <button type="button" class="btn btn-dark btn-sm increment"
+                                                                    data-cart-id="" data-cart-change-url="">+</button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col p-0">
+                                                        <p>x 100.00 = </p>
+                                                    </div>
+                                                    <div class="col p-0"><strong>100.00 $</strong></div>
+                                                    <div class="col p-0">
+                                                        <a href="#" class="remove-from-cart" data-cart-id="">
+                                                            <img class="mx-1" src="../deps/icons/trash3-fill.svg"
+                                                                alt="Catalog Icon" width="16" height="16">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card mb-3 shadow-lg">
+                                        <div class="card-footer">
+                                            <p class="float-left">Итого <strong>1</strong> товар(а) на сумму</p>
+                                            <h4 class="float-left"><strong>100.00 $</strong></h4>
+                                        </div>
+                                    </div>
+                                    <!-- Закончилась разметка корзины -->
+                                </div>
+                                <a class="btn btn-dark" href="../create_order/create_order.html">
+                                    Оформить заказ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Закончилась разметка модального окна -->
+            </div>
+    </div>
     <section>
         
         <!-- Контент -->
@@ -203,7 +299,7 @@
                         <!-- Форма фильтров -->
                         
                         <!-- Карта товара -->
-                        <div class="col-lg-3 col-md-4 top-card">
+                        <div class="col-lg-3 col-md-4 col-6 top-card">
                             <div class="card rounded">
                                 <div class="card_image">
                                     <a href="../catalog/product.html"><img src="../image/artur_conan/sherlok_holms.png" class="card-image image" alt="..."></a>
@@ -224,7 +320,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 top-card">
+                        <div class="col-lg-3 col-md-4 col-6 top-card">
                             <div class="card rounded">
                                 <div class="card_image">
                                     <a href="#"><img src="../image/artur_conan/sherlok_holms.png" class="card-image image" alt="..."></a>
@@ -245,7 +341,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 top-card">
+                        <div class="col-lg-3 col-md-4 col-6 top-card">
                             <div class="card rounded">
                                 <div class="card_image">
                                     <a href="#"><img src="../image/artur_conan/sherlok_holms.png" class="card-image image" alt="..."></a>
@@ -266,7 +362,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 top-card">
+                        <div class="col-lg-3 col-md-4 col-6 top-card">
                             <div class="card rounded">
                                 <div class="card_image">
                                     <a href="#"><img src="../image/artur_conan/sherlok_holms.png" class="card-image image" alt="..."></a>
@@ -287,7 +383,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 top-card">
+                        <div class="col-lg-3 col-md-4 col-6 top-card">
                             <div class="card rounded">
                                 <div class="card_image">
                                     <a href="#"><img src="../image/artur_conan/sherlok_holms.png" class="card-image image" alt="..."></a>
@@ -308,7 +404,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 top-card">
+                        <div class="col-lg-3 col-md-4 col-6 top-card">
                             <div class="card rounded">
                                 <div class="card_image">
                                     <a href="#"><img src="../image/artur_conan/sherlok_holms.png" class="card-image image" alt="..."></a>
@@ -329,7 +425,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 top-card">
+                        <div class="col-lg-3 col-md-4 col-6 top-card">
                             <div class="card rounded">
                                 <div class="card_image">
                                     <a href="#"><img src="../image/artur_conan/sherlok_holms.png" class="card-image image" alt="..."></a>
@@ -350,7 +446,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 top-card">
+                        <div class="col-lg-3 col-md-4 col-6 top-card">
                             <div class="card rounded">
                                 <div class="card_image">
                                     <a href="#"><img src="../image/artur_conan/sherlok_holms.png" class="card-image image" alt="..."></a>
