@@ -58,20 +58,20 @@
                 <a href="" class="pro_nas">Про нас</a>
                 <a href="" class="info">Інформація</a>
                 <div class="dropdown">
-                    <li>
-                        <button class="btn-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">Мій профіль</button>
-                        <ul class="dropdown-menu profile">
-                            <li><a class="dropdown-item profile" href="../cart/cart.html">Корзина</a></li>
-                            <li><a class="dropdown-item profile" href="../users/profile.html">Личный кабинет</a>
-                            </li>
-                            <li><a class="dropdown-item profile" href="#">Админ панель</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item profile" href="#">Выйти</a></li>
-                        </ul>
+
+                    <button class="btn-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">Мій профіль</button>
+                    <ul class="dropdown-menu profile">
+                        <li><a class="dropdown-item profile" href="../carts/cart.html">Корзина</a></li>
+                        <li><a class="dropdown-item profile" href="../users/profile.html">Личный кабинет</a>
+                        </li>
+                        <li><a class="dropdown-item profile" href="#">Админ панель</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item profile" href="#">Выйти</a></li>
+                    </ul>
                             
-                    </li>
+                    
                 </div>
             </div>
             
@@ -92,7 +92,7 @@
                     </svg>
                     <span>Обране</span>
                 </a>
-                <a href="../user/login.html" class="login_button">
+                <a href="../users/login.html" class="login_button">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill="currentColor" d="M12.0002 12.0001C12.9809 12.0001 13.9396 11.7093 14.7551 11.1644C15.5705 10.6195 16.2061 9.8451 16.5814 8.93902C16.9567 8.03294 17.0549 7.03591 16.8636 6.07402C16.6722 5.11213 16.2 4.22858 15.5065 3.5351C14.813 2.84162 13.9295 2.36935 12.9676 2.17801C12.0057 1.98668 11.0087 2.08488 10.1026 2.46019C9.1965 2.8355 8.42206 3.47107 7.87719 4.28652C7.33233 5.10197 7.0415 6.06068 7.0415 7.04141C7.0415 8.35654 7.56393 9.6178 8.49387 10.5477C9.4238 11.4777 10.6851 12.0001 12.0002 12.0001ZM12.0002 3.3224C12.7357 3.3224 13.4548 3.54052 14.0664 3.94917C14.6779 4.35782 15.1546 4.93865 15.4361 5.61821C15.7176 6.29777 15.7912 7.04554 15.6477 7.76696C15.5042 8.48837 15.15 9.15104 14.6299 9.67115C14.1098 10.1913 13.4471 10.5455 12.7257 10.689C12.0043 10.8325 11.2565 10.7588 10.577 10.4773C9.89742 10.1958 9.31659 9.71917 8.90794 9.10758C8.49929 8.496 8.28117 7.77696 8.28117 7.04141C8.2822 6.05539 8.67435 5.11004 9.37158 4.41281C10.0688 3.71558 11.0142 3.32343 12.0002 3.3224Z"></path>
                         <path fill="currentColor" d="M20.6776 20.5726C20.6775 18.7921 19.9701 17.0845 18.7111 15.8255C17.4521 14.5665 15.7446 13.8592 13.9641 13.859H10.0359C8.25536 13.8592 6.54785 14.5666 5.28886 15.8256C4.02986 17.0846 3.32247 18.7921 3.32227 20.5726L3.32227 21.297C3.32227 21.4614 3.38757 21.6191 3.50381 21.7353C3.62005 21.8516 3.77771 21.9169 3.9421 21.9169C4.10649 21.9169 4.26415 21.8516 4.38039 21.7353C4.49663 21.6191 4.56194 21.4614 4.56194 21.297V20.5656C4.56581 17.5509 7.02039 15.0987 10.0359 15.0987H13.9602C16.9795 15.0987 19.4341 17.5509 19.438 20.5656V21.3068C19.438 21.4686 19.5022 21.6238 19.6166 21.7382C19.731 21.8526 19.8862 21.9169 20.048 21.9169H20.0676C20.1477 21.9169 20.227 21.9011 20.3011 21.8704C20.3751 21.8398 20.4423 21.7948 20.499 21.7382C20.5556 21.6815 20.6005 21.6143 20.6312 21.5403C20.6619 21.4663 20.6776 21.3869 20.6776 21.3068V20.5726Z"></path>
@@ -103,7 +103,87 @@
         </div>
     </header>
     <section>
-        
+        <div class="container corzina">
+            <!-- Каталог и корзина с фиксированным расположением на странице -->
+            <div class="row catalog-btn">
+                <!-- Каталог -->
+            
+                <!-- Значек корзины, вызывает модальное окно -->
+                        <a href="../carts/cart.html">
+                            <button type="button" class="btn corzina_btn" id="modalButton" aria-expanded="false">
+                                <img class="mx-1" src="../deps/icons/basket2-fill.svg" alt="Catalog Icon" width="24"
+                                height="24">
+                                <span>0</span>
+                            </button>
+                        </a>
+                    
+                
+                <!-- Разметка модального окна корзины -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="text-center mb-4">Корзина</h3>
+                                <div class="container" id="cart-items-container">
+                                    <!-- Разметка корзины -->
+                                    <div class="card mb-3 text-bg-light shadow-lg">
+                                        <div class="card-header">
+                                            <h5 class="card-title">Товар</h5>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <div class="row text-center">
+                                                    <div class="col p-0">
+                                                        <div class="input-group">
+                                                            <span class="input-group-btn">
+                                                                <button type="button" class="btn btn-dark btn-sm decrement"
+                                                                    data-cart-id="" data-cart-change-url="">-</button>
+                                                            </span>
+                                                            <input type="text" class="form-control number" value="1"
+                                                                readonly>
+                                                            <span class="input-group-btn">
+                                                                <button type="button" class="btn btn-dark btn-sm increment"
+                                                                    data-cart-id="" data-cart-change-url="">+</button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col p-0">
+                                                        <p>x 100.00 = </p>
+                                                    </div>
+                                                    <div class="col p-0"><strong>100.00 $</strong></div>
+                                                    <div class="col p-0">
+                                                        <a href="#" class="remove-from-cart" data-cart-id="">
+                                                            <img class="mx-1" src="../deps/icons/trash3-fill.svg"
+                                                                alt="Catalog Icon" width="16" height="16">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card mb-3 shadow-lg">
+                                        <div class="card-footer">
+                                            <p class="float-left">Итого <strong>1</strong> товар(а) на сумму</p>
+                                            <h4 class="float-left"><strong>100.00 $</strong></h4>
+                                        </div>
+                                    </div>
+                                    <!-- Закончилась разметка корзины -->
+                                </div>
+                                <a class="btn btn-dark" href="../orders/create_order.html">
+                                    Оформить заказ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Закончилась разметка модального окна -->
+            </div>
+        </div>
         <!-- Контент -->
         <div class="container">
             <div class="row mt-1">

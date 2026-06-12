@@ -162,14 +162,14 @@ a {
 .dropdown-menu.show {
     display: block !important;
     z-index: 999999 !important; 
-    background-color: #eeeeee;
+    background-color: #fffefe;
 }
 .dropdown-menu.profile {
     background-color: rgb(28, 28, 28);
 
 }
 .dropdown-item.profile:hover{
-    background-color: rgb(49, 48, 48)
+    background-color: rgb(187, 184, 184)
 }
 .dropdown-item.profile {
     color: white;
@@ -177,7 +177,7 @@ a {
 .dropdown-menu {
     position:absolute;
     display: none;
-    border: none;
+    border: 1px solid rgba(171, 174, 171, 0.536);
     border-radius: 5px;
     padding: 10px 0;
     height: auto;
@@ -458,6 +458,7 @@ li{
     display: flex;
     justify-content: space-around;
 }
+
 .mega-col h3 {
     font-size: 18px;
     color: #fff;
